@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		9249159D240ECF5936524898 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFC08C20D55C80713281EC8B /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		AF44F1D51CD092CD00E20EE1 /* TTUserDefaultTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF44F1D41CD092CD00E20EE1 /* TTUserDefaultTools.swift */; };
+		AF44F1D71CD099E100E20EE1 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF44F1D61CD099E100E20EE1 /* Global.swift */; };
+		AF44F1D91CD0A2A100E20EE1 /* UIImage+common.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF44F1D81CD0A2A100E20EE1 /* UIImage+common.swift */; };
+		AF44F1DB1CD0AEBA00E20EE1 /* TTMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF44F1DA1CD0AEBA00E20EE1 /* TTMainViewController.swift */; };
+		AF44F1ED1CD0C22C00E20EE1 /* NSString+Sha1.m in Sources */ = {isa = PBXBuildFile; fileRef = AF44F1E81CD0C22C00E20EE1 /* NSString+Sha1.m */; };
+		AF44F1EE1CD0C22C00E20EE1 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = AF44F1EA1CD0C22C00E20EE1 /* Reachability.m */; };
+		AF44F1EF1CD0C22C00E20EE1 /* RNCachingURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = AF44F1EC1CD0C22C00E20EE1 /* RNCachingURLProtocol.m */; };
 		AFC89BA21CCE4C8B00FE854F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC89BA11CCE4C8B00FE854F /* AppDelegate.swift */; };
 		AFC89BA91CCE4C8B00FE854F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFC89BA81CCE4C8B00FE854F /* Assets.xcassets */; };
 		AFC89BAC1CCE4C8B00FE854F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFC89BAA1CCE4C8B00FE854F /* LaunchScreen.storyboard */; };
@@ -37,6 +44,17 @@
 /* Begin PBXFileReference section */
 		746C226A1BA65DBB1CDCB6E9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		79DD44EBDD899439A6B01F39 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		AF44F1D41CD092CD00E20EE1 /* TTUserDefaultTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTUserDefaultTools.swift; sourceTree = "<group>"; };
+		AF44F1D61CD099E100E20EE1 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		AF44F1D81CD0A2A100E20EE1 /* UIImage+common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+common.swift"; sourceTree = "<group>"; };
+		AF44F1DA1CD0AEBA00E20EE1 /* TTMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTMainViewController.swift; sourceTree = "<group>"; };
+		AF44F1E71CD0C22C00E20EE1 /* NSString+Sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Sha1.h"; sourceTree = "<group>"; };
+		AF44F1E81CD0C22C00E20EE1 /* NSString+Sha1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Sha1.m"; sourceTree = "<group>"; };
+		AF44F1E91CD0C22C00E20EE1 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		AF44F1EA1CD0C22C00E20EE1 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		AF44F1EB1CD0C22C00E20EE1 /* RNCachingURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNCachingURLProtocol.h; sourceTree = "<group>"; };
+		AF44F1EC1CD0C22C00E20EE1 /* RNCachingURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNCachingURLProtocol.m; sourceTree = "<group>"; };
+		AF44F1F01CD0C54C00E20EE1 /* NewsChina_Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NewsChina_Swift-Bridging-Header.h"; path = "Library/RNC/NewsChina_Swift-Bridging-Header.h"; sourceTree = "<group>"; };
 		AFC89B9E1CCE4C8B00FE854F /* NewsChina_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsChina_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFC89BA11CCE4C8B00FE854F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFC89BA81CCE4C8B00FE854F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -88,6 +106,36 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		AF44F1D31CD0925B00E20EE1 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				AF44F1D41CD092CD00E20EE1 /* TTUserDefaultTools.swift */,
+				AF44F1D61CD099E100E20EE1 /* Global.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		AF44F1DC1CD0BF4300E20EE1 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				AF44F1E61CD0C22C00E20EE1 /* RNC */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		AF44F1E61CD0C22C00E20EE1 /* RNC */ = {
+			isa = PBXGroup;
+			children = (
+				AF44F1E71CD0C22C00E20EE1 /* NSString+Sha1.h */,
+				AF44F1E81CD0C22C00E20EE1 /* NSString+Sha1.m */,
+				AF44F1E91CD0C22C00E20EE1 /* Reachability.h */,
+				AF44F1EA1CD0C22C00E20EE1 /* Reachability.m */,
+				AF44F1EB1CD0C22C00E20EE1 /* RNCachingURLProtocol.h */,
+				AF44F1EC1CD0C22C00E20EE1 /* RNCachingURLProtocol.m */,
+			);
+			path = RNC;
+			sourceTree = "<group>";
+		};
 		AFC89B951CCE4C8B00FE854F = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +161,9 @@
 		AFC89BA01CCE4C8B00FE854F /* NewsChina_Swift */ = {
 			isa = PBXGroup;
 			children = (
+				AF44F1F01CD0C54C00E20EE1 /* NewsChina_Swift-Bridging-Header.h */,
+				AF44F1DC1CD0BF4300E20EE1 /* Library */,
+				AF44F1D31CD0925B00E20EE1 /* Tools */,
 				AFEC90C81CCE5A4F003801AD /* Extension */,
 				AFC89BD41CCE54F000FE854F /* TTBase */,
 				AFC89BCF1CCE524D00FE854F /* TTLogin */,
@@ -156,6 +207,7 @@
 		AFC89BD01CCE524D00FE854F /* TTMaIn */ = {
 			isa = PBXGroup;
 			children = (
+				AF44F1DA1CD0AEBA00E20EE1 /* TTMainViewController.swift */,
 			);
 			path = TTMaIn;
 			sourceTree = "<group>";
@@ -193,6 +245,7 @@
 			isa = PBXGroup;
 			children = (
 				AFEC90C91CCE5C7B003801AD /* UIView+Common.swift */,
+				AF44F1D81CD0A2A100E20EE1 /* UIImage+common.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -386,8 +439,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF44F1D91CD0A2A100E20EE1 /* UIImage+common.swift in Sources */,
+				AF44F1D51CD092CD00E20EE1 /* TTUserDefaultTools.swift in Sources */,
+				AF44F1ED1CD0C22C00E20EE1 /* NSString+Sha1.m in Sources */,
 				AFC89BA21CCE4C8B00FE854F /* AppDelegate.swift in Sources */,
+				AF44F1DB1CD0AEBA00E20EE1 /* TTMainViewController.swift in Sources */,
 				AFEC90C71CCE561E003801AD /* TTBaseViewController.swift in Sources */,
+				AF44F1D71CD099E100E20EE1 /* Global.swift in Sources */,
+				AF44F1EF1CD0C22C00E20EE1 /* RNCachingURLProtocol.m in Sources */,
+				AF44F1EE1CD0C22C00E20EE1 /* Reachability.m in Sources */,
 				AFEC90CA1CCE5C7B003801AD /* UIView+Common.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -472,7 +532,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -511,7 +571,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -523,10 +583,15 @@
 			baseConfigurationReference = 79DD44EBDD899439A6B01F39 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/NewsChina_Swift/Library/RNC";
 				INFOPLIST_FILE = NewsChina_Swift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chen.NewsChina-Swift";
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/NewsChina_Swift/Library/RNC/NewsChina_Swift-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -535,10 +600,15 @@
 			baseConfigurationReference = 746C226A1BA65DBB1CDCB6E9 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/NewsChina_Swift/Library/RNC";
 				INFOPLIST_FILE = NewsChina_Swift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chen.NewsChina-Swift";
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/NewsChina_Swift/Library/RNC/NewsChina_Swift-Bridging-Header.h";
 			};
 			name = Release;
 		};

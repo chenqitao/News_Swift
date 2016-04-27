@@ -13,25 +13,29 @@ private var tapReturnBlockKey:NSString = "tapreturnKey"
 typealias tapBlock = (() -> ())?
 extension UIView {
     
-   private var clickAddShopCar: tapBlock{
+   private var tappedBlock: tapBlock{
         get {
             return (objc_getAssociatedObject(self, &tapReturnBlockKey) as! tapBlock)
         }
         set(newValue) {
-            objc_setAssociatedObject(self, &tapReturnBlockKey, newValue  as? AnyObject, objc_AssociationPolicy.OBJC_ASSOCIATION_COPY_NONATOMIC)
+            objc_setAssociatedObject(self, &tapReturnBlockKey, newValue as! AnyObject, .OBJC_ASSOCIATION_COPY_NONATOMIC)
         }
     }
 
-    func ds_tappedWithBlock() -> Void {
+    func ds_tappedWithBlock(block:tapBlock) -> Void {
+        tappedBlock = block;
+        let tapRecognizer = UITapGestureRecognizer.init(target: self, action:#selector(UIView.tapHandler(_:)))
+        self.userInteractionEnabled = true
+        self.addGestureRecognizer(tapRecognizer)
+        
         
     }
-
-
-
-
-
-
-
+    
+    func tapHandler(gesture:UIGestureRecognizer) -> Void {
+        if tappedBlock != nil {
+            tappedBlock!()
+        }
+    }
 
 
 }

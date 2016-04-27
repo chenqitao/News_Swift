@@ -27,7 +27,7 @@ class TTBaseViewController: UIViewController {
     
     
     func creatUI() -> Void {  //创建UI
-        
+     
     }
     
     func creatData() -> Void {  //请求数据
@@ -42,14 +42,56 @@ class TTBaseViewController: UIViewController {
         
     }
     
+    func setMineNav() -> Void {   //导航栏
+        if hiddenNaviBar {
+            if mTableView.contentOffset.y <= 0  {
+                self.navigationController?.navigationBar.setBackgroundImage(UIImage.init(), forBarMetrics: UIBarMetrics.Default)
+                self.navigationController?.navigationBar.shadowImage = UIImage.init()
+                self.navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName:UIFont.systemFontOfSize(18),NSForegroundColorAttributeName:UIColor.whiteColor()]
+                self.edgesForExtendedLayout = UIRectEdge.Top
+            } else {
+                self.navigationController?.navigationBar.setBackgroundImage(nil, forBarMetrics: UIBarMetrics.Default)
+                self.navigationController?.navigationBar.shadowImage = nil
+                self.navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName:UIFont.systemFontOfSize(18),NSForegroundColorAttributeName:UIColor.whiteColor()]
+                self.edgesForExtendedLayout = UIRectEdge.None
+            
+            }
+        } else {
+            if TTUserDefaultTools.objectForKey(DSIsNightModel).boolValue == false {
+                self.navigationController?.navigationBar.setBackgroundImage(UIImage.imageWithBackgroundColor(UIColor.whiteColor()), forBarMetrics: UIBarMetrics.Default)
+                self.navigationController?.navigationBar.shadowImage = UIImage.imageWithBackgroundColor(UIColor.whiteColor())
+                self.navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName:UIFont.systemFontOfSize(18),NSForegroundColorAttributeName:UIColor.redColor()]
+            } else {
+                self.navigationController?.navigationBar.setBackgroundImage(UIImage.imageWithBackgroundColor(DSNightColor), forBarMetrics: UIBarMetrics.Default)
+                self.navigationController?.navigationBar.shadowImage = UIImage.imageWithBackgroundColor(DSNightColor)
+                self.navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName:UIFont.systemFontOfSize(18),NSForegroundColorAttributeName:UIColor.whiteColor()]
+            }
+                self.edgesForExtendedLayout = UIRectEdge.None
+        }
+    }
+    
+    func setMineToolBar() -> Void {
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+         creatUI()    //加载UI
+         creatData()  //加载数据源
         // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        NSNotificationCenter.defaultCenter().removeObserver(self)
+    }
+    
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent
     }
 }
