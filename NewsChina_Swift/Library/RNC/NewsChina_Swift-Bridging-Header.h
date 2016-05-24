@@ -10,4 +10,6 @@
 #define NewsChina_Swift_Bridging_Header_h
 
 #import "RNCachingURLProtocol.h"
+#import "FLSideSlipViewController.h"
+#import <CommonCrypto/CommonCrypto.h>
 #endif /* NewsChina_Swift_Bridging_Header_h */

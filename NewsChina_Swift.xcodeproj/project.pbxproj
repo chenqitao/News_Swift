@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		9249159D240ECF5936524898 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFC08C20D55C80713281EC8B /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		AF0546C31CD354DD00E5AA12 /* NSDictory+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0546C21CD354DD00E5AA12 /* NSDictory+Common.swift */; };
+		AF0546C51CD357E000E5AA12 /* NSString+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0546C41CD357E000E5AA12 /* NSString+Common.swift */; };
+		AF0546C71CD358E300E5AA12 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF0546C61CD358E300E5AA12 /* CoreFoundation.framework */; };
+		AF1D90D31CE85D700097124E /* TTHttpRequestTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1D90D21CE85D700097124E /* TTHttpRequestTools.swift */; };
 		AF44F1D51CD092CD00E20EE1 /* TTUserDefaultTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF44F1D41CD092CD00E20EE1 /* TTUserDefaultTools.swift */; };
 		AF44F1D71CD099E100E20EE1 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF44F1D61CD099E100E20EE1 /* Global.swift */; };
 		AF44F1D91CD0A2A100E20EE1 /* UIImage+common.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF44F1D81CD0A2A100E20EE1 /* UIImage+common.swift */; };
@@ -15,6 +19,10 @@
 		AF44F1ED1CD0C22C00E20EE1 /* NSString+Sha1.m in Sources */ = {isa = PBXBuildFile; fileRef = AF44F1E81CD0C22C00E20EE1 /* NSString+Sha1.m */; };
 		AF44F1EE1CD0C22C00E20EE1 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = AF44F1EA1CD0C22C00E20EE1 /* Reachability.m */; };
 		AF44F1EF1CD0C22C00E20EE1 /* RNCachingURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = AF44F1EC1CD0C22C00E20EE1 /* RNCachingURLProtocol.m */; };
+		AF44F1F61CD1A6C300E20EE1 /* FLSideSlipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF44F1F31CD1A6C300E20EE1 /* FLSideSlipViewController.m */; };
+		AF44F1F71CD1A6C300E20EE1 /* UIViewController+FLSideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = AF44F1F51CD1A6C300E20EE1 /* UIViewController+FLSideMenu.m */; };
+		AF44F1F91CD1A98C00E20EE1 /* TTMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF44F1F81CD1A98C00E20EE1 /* TTMenuViewController.swift */; };
+		AF44F20D1CD1EF6400E20EE1 /* TTMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF44F20C1CD1EF6400E20EE1 /* TTMainView.swift */; };
 		AFC89BA21CCE4C8B00FE854F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC89BA11CCE4C8B00FE854F /* AppDelegate.swift */; };
 		AFC89BA91CCE4C8B00FE854F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFC89BA81CCE4C8B00FE854F /* Assets.xcassets */; };
 		AFC89BAC1CCE4C8B00FE854F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFC89BAA1CCE4C8B00FE854F /* LaunchScreen.storyboard */; };
@@ -44,10 +52,14 @@
 /* Begin PBXFileReference section */
 		746C226A1BA65DBB1CDCB6E9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		79DD44EBDD899439A6B01F39 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		AF0546C21CD354DD00E5AA12 /* NSDictory+Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDictory+Common.swift"; sourceTree = "<group>"; };
+		AF0546C41CD357E000E5AA12 /* NSString+Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString+Common.swift"; sourceTree = "<group>"; };
+		AF0546C61CD358E300E5AA12 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		AF1D90D21CE85D700097124E /* TTHttpRequestTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTHttpRequestTools.swift; sourceTree = "<group>"; };
 		AF44F1D41CD092CD00E20EE1 /* TTUserDefaultTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTUserDefaultTools.swift; sourceTree = "<group>"; };
 		AF44F1D61CD099E100E20EE1 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		AF44F1D81CD0A2A100E20EE1 /* UIImage+common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+common.swift"; sourceTree = "<group>"; };
-		AF44F1DA1CD0AEBA00E20EE1 /* TTMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTMainViewController.swift; sourceTree = "<group>"; };
+		AF44F1DA1CD0AEBA00E20EE1 /* TTMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TTMainViewController.swift; path = ../TTMainViewController.swift; sourceTree = "<group>"; };
 		AF44F1E71CD0C22C00E20EE1 /* NSString+Sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Sha1.h"; sourceTree = "<group>"; };
 		AF44F1E81CD0C22C00E20EE1 /* NSString+Sha1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Sha1.m"; sourceTree = "<group>"; };
 		AF44F1E91CD0C22C00E20EE1 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
@@ -55,6 +67,12 @@
 		AF44F1EB1CD0C22C00E20EE1 /* RNCachingURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNCachingURLProtocol.h; sourceTree = "<group>"; };
 		AF44F1EC1CD0C22C00E20EE1 /* RNCachingURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNCachingURLProtocol.m; sourceTree = "<group>"; };
 		AF44F1F01CD0C54C00E20EE1 /* NewsChina_Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NewsChina_Swift-Bridging-Header.h"; path = "Library/RNC/NewsChina_Swift-Bridging-Header.h"; sourceTree = "<group>"; };
+		AF44F1F21CD1A6C300E20EE1 /* FLSideSlipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLSideSlipViewController.h; sourceTree = "<group>"; };
+		AF44F1F31CD1A6C300E20EE1 /* FLSideSlipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLSideSlipViewController.m; sourceTree = "<group>"; };
+		AF44F1F41CD1A6C300E20EE1 /* UIViewController+FLSideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+FLSideMenu.h"; sourceTree = "<group>"; };
+		AF44F1F51CD1A6C300E20EE1 /* UIViewController+FLSideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+FLSideMenu.m"; sourceTree = "<group>"; };
+		AF44F1F81CD1A98C00E20EE1 /* TTMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TTMenuViewController.swift; path = ../TTMenuViewController.swift; sourceTree = "<group>"; };
+		AF44F20C1CD1EF6400E20EE1 /* TTMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTMainView.swift; sourceTree = "<group>"; };
 		AFC89B9E1CCE4C8B00FE854F /* NewsChina_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsChina_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFC89BA11CCE4C8B00FE854F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFC89BA81CCE4C8B00FE854F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -76,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF0546C71CD358E300E5AA12 /* CoreFoundation.framework in Frameworks */,
 				9249159D240ECF5936524898 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -111,6 +130,7 @@
 			children = (
 				AF44F1D41CD092CD00E20EE1 /* TTUserDefaultTools.swift */,
 				AF44F1D61CD099E100E20EE1 /* Global.swift */,
+				AF1D90D21CE85D700097124E /* TTHttpRequestTools.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -118,6 +138,7 @@
 		AF44F1DC1CD0BF4300E20EE1 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				AF44F1F11CD1A6C300E20EE1 /* FLSideSlipViewController */,
 				AF44F1E61CD0C22C00E20EE1 /* RNC */,
 			);
 			path = Library;
@@ -134,6 +155,146 @@
 				AF44F1EC1CD0C22C00E20EE1 /* RNCachingURLProtocol.m */,
 			);
 			path = RNC;
+			sourceTree = "<group>";
+		};
+		AF44F1F11CD1A6C300E20EE1 /* FLSideSlipViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AF44F1F21CD1A6C300E20EE1 /* FLSideSlipViewController.h */,
+				AF44F1F31CD1A6C300E20EE1 /* FLSideSlipViewController.m */,
+				AF44F1F41CD1A6C300E20EE1 /* UIViewController+FLSideMenu.h */,
+				AF44F1F51CD1A6C300E20EE1 /* UIViewController+FLSideMenu.m */,
+			);
+			path = FLSideSlipViewController;
+			sourceTree = "<group>";
+		};
+		AF44F1FA1CD1EEB500E20EE1 /* Contoller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Contoller;
+			sourceTree = "<group>";
+		};
+		AF44F1FB1CD1EEB500E20EE1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AF44F1FC1CD1EEB500E20EE1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AF44F1FD1CD1EEBE00E20EE1 /* Contoller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Contoller;
+			sourceTree = "<group>";
+		};
+		AF44F1FE1CD1EEBE00E20EE1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AF44F1FF1CD1EEBE00E20EE1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AF44F2001CD1EEC500E20EE1 /* Contoller */ = {
+			isa = PBXGroup;
+			children = (
+				AF44F1DA1CD0AEBA00E20EE1 /* TTMainViewController.swift */,
+			);
+			path = Contoller;
+			sourceTree = "<group>";
+		};
+		AF44F2011CD1EEC500E20EE1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AF44F2021CD1EEC500E20EE1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AF44F20C1CD1EF6400E20EE1 /* TTMainView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AF44F2031CD1EECC00E20EE1 /* Contoller */ = {
+			isa = PBXGroup;
+			children = (
+				AF44F1F81CD1A98C00E20EE1 /* TTMenuViewController.swift */,
+			);
+			path = Contoller;
+			sourceTree = "<group>";
+		};
+		AF44F2041CD1EECC00E20EE1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AF44F2051CD1EECC00E20EE1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AF44F2061CD1EEE500E20EE1 /* Contoller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Contoller;
+			sourceTree = "<group>";
+		};
+		AF44F2071CD1EEE500E20EE1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AF44F2081CD1EEE500E20EE1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AF44F2091CD1EEEB00E20EE1 /* Contoller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Contoller;
+			sourceTree = "<group>";
+		};
+		AF44F20A1CD1EEEB00E20EE1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AF44F20B1CD1EEEB00E20EE1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		AFC89B951CCE4C8B00FE854F = {
@@ -200,6 +361,9 @@
 		AFC89BCF1CCE524D00FE854F /* TTLogin */ = {
 			isa = PBXGroup;
 			children = (
+				AF44F1FD1CD1EEBE00E20EE1 /* Contoller */,
+				AF44F1FE1CD1EEBE00E20EE1 /* Model */,
+				AF44F1FF1CD1EEBE00E20EE1 /* View */,
 			);
 			path = TTLogin;
 			sourceTree = "<group>";
@@ -207,7 +371,9 @@
 		AFC89BD01CCE524D00FE854F /* TTMaIn */ = {
 			isa = PBXGroup;
 			children = (
-				AF44F1DA1CD0AEBA00E20EE1 /* TTMainViewController.swift */,
+				AF44F2001CD1EEC500E20EE1 /* Contoller */,
+				AF44F2011CD1EEC500E20EE1 /* Model */,
+				AF44F2021CD1EEC500E20EE1 /* View */,
 			);
 			path = TTMaIn;
 			sourceTree = "<group>";
@@ -215,6 +381,9 @@
 		AFC89BD11CCE524D00FE854F /* TTMenu */ = {
 			isa = PBXGroup;
 			children = (
+				AF44F2031CD1EECC00E20EE1 /* Contoller */,
+				AF44F2041CD1EECC00E20EE1 /* Model */,
+				AF44F2051CD1EECC00E20EE1 /* View */,
 			);
 			path = TTMenu;
 			sourceTree = "<group>";
@@ -222,6 +391,9 @@
 		AFC89BD21CCE524D00FE854F /* TTRoot */ = {
 			isa = PBXGroup;
 			children = (
+				AF44F2061CD1EEE500E20EE1 /* Contoller */,
+				AF44F2071CD1EEE500E20EE1 /* Model */,
+				AF44F2081CD1EEE500E20EE1 /* View */,
 			);
 			path = TTRoot;
 			sourceTree = "<group>";
@@ -229,6 +401,9 @@
 		AFC89BD31CCE524D00FE854F /* TTSettings */ = {
 			isa = PBXGroup;
 			children = (
+				AF44F2091CD1EEEB00E20EE1 /* Contoller */,
+				AF44F20A1CD1EEEB00E20EE1 /* Model */,
+				AF44F20B1CD1EEEB00E20EE1 /* View */,
 			);
 			path = TTSettings;
 			sourceTree = "<group>";
@@ -236,6 +411,9 @@
 		AFC89BD41CCE54F000FE854F /* TTBase */ = {
 			isa = PBXGroup;
 			children = (
+				AF44F1FA1CD1EEB500E20EE1 /* Contoller */,
+				AF44F1FB1CD1EEB500E20EE1 /* Model */,
+				AF44F1FC1CD1EEB500E20EE1 /* View */,
 				AFEC90C61CCE561E003801AD /* TTBaseViewController.swift */,
 			);
 			path = TTBase;
@@ -246,6 +424,8 @@
 			children = (
 				AFEC90C91CCE5C7B003801AD /* UIView+Common.swift */,
 				AF44F1D81CD0A2A100E20EE1 /* UIImage+common.swift */,
+				AF0546C21CD354DD00E5AA12 /* NSDictory+Common.swift */,
+				AF0546C41CD357E000E5AA12 /* NSString+Common.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -253,6 +433,7 @@
 		E2C3AAC0088C174C84738D21 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AF0546C61CD358E300E5AA12 /* CoreFoundation.framework */,
 				EFC08C20D55C80713281EC8B /* Pods.framework */,
 			);
 			name = Frameworks;
@@ -439,14 +620,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF44F1F71CD1A6C300E20EE1 /* UIViewController+FLSideMenu.m in Sources */,
 				AF44F1D91CD0A2A100E20EE1 /* UIImage+common.swift in Sources */,
 				AF44F1D51CD092CD00E20EE1 /* TTUserDefaultTools.swift in Sources */,
+				AF44F1F61CD1A6C300E20EE1 /* FLSideSlipViewController.m in Sources */,
+				AF44F1F91CD1A98C00E20EE1 /* TTMenuViewController.swift in Sources */,
 				AF44F1ED1CD0C22C00E20EE1 /* NSString+Sha1.m in Sources */,
 				AFC89BA21CCE4C8B00FE854F /* AppDelegate.swift in Sources */,
 				AF44F1DB1CD0AEBA00E20EE1 /* TTMainViewController.swift in Sources */,
 				AFEC90C71CCE561E003801AD /* TTBaseViewController.swift in Sources */,
 				AF44F1D71CD099E100E20EE1 /* Global.swift in Sources */,
+				AF0546C31CD354DD00E5AA12 /* NSDictory+Common.swift in Sources */,
+				AF1D90D31CE85D700097124E /* TTHttpRequestTools.swift in Sources */,
 				AF44F1EF1CD0C22C00E20EE1 /* RNCachingURLProtocol.m in Sources */,
+				AF0546C51CD357E000E5AA12 /* NSString+Common.swift in Sources */,
+				AF44F20D1CD1EF6400E20EE1 /* TTMainView.swift in Sources */,
 				AF44F1EE1CD0C22C00E20EE1 /* Reachability.m in Sources */,
 				AFEC90CA1CCE5C7B003801AD /* UIView+Common.swift in Sources */,
 			);
@@ -532,7 +720,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -571,7 +759,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -584,7 +772,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEFINES_MODULE = YES;
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/NewsChina_Swift/Library/RNC";
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/NewsChina_Swift/Library/RNC",
+					"$(inherited)",
+					"${SRCROOT}",
+				);
 				INFOPLIST_FILE = NewsChina_Swift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -601,7 +793,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEFINES_MODULE = YES;
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/NewsChina_Swift/Library/RNC";
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/NewsChina_Swift/Library/RNC",
+					"$(inherited)",
+					"${SRCROOT}",
+				);
 				INFOPLIST_FILE = NewsChina_Swift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

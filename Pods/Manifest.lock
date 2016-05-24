@@ -1,13 +1,16 @@
 PODS:
   - Alamofire (3.3.1)
+  - RxSwift (2.4)
   - SnapKit (0.20.0)
 
 DEPENDENCIES:
   - Alamofire (~> 3.3)
+  - RxSwift (~> 2.4)
   - SnapKit (~> 0.20.0)
 
 SPEC CHECKSUMS:
   Alamofire: 369bc67b6f5ac33ded3648d7bd21c5bfb91c2ecc
+  RxSwift: 67b9ef4e8b34fb394e200e754c6a09cc16559f94
   SnapKit: 5fce3c1bbbf1fbd31de9aa92f33eb9fa03f15650
 
 COCOAPODS: 0.38.2

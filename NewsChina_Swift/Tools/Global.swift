@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import RxSwift
+import SnapKit
 
 public let ScreenWidth = UIScreen.mainScreen().bounds.size.width
 public let ScreenHeight = UIScreen.mainScreen().bounds.size.height
@@ -16,8 +18,12 @@ public let kIsPlus = UIScreen.mainScreen().bounds.size.width == 414.0
 public let DSNightColor = UIColor.init(colorLiteralRed: 29/255.0, green: 29/255.0, blue: 29/255.0, alpha: 1)
 //常量
 public let DSIsNightModel = "mode" /**< 是否夜间模式*/
+public let DSUserID = "user_id" /**< 用户id*/
 public let DsIsNight = "isNight"
 public let DSCacheFilePath = "URLCACHE" /**< 缓存文件拼接的路径*/
+public let DSREGION = "US"
+public let DSPartner = "1000000"
+public let DSPartnerKey = "05565e6a859f406b8065401ec8c0b80d"
 
 
 public let DSLoginApi = "/api/login/userLogin.do"  /**< 登陆api */

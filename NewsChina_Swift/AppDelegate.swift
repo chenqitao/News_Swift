@@ -12,16 +12,36 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var menuViewController: FLSideSlipViewController?
+    
+//    var menuViewController : flsid
+    class func shared() -> AppDelegate {
+        return UIApplication.sharedApplication().delegate as! AppDelegate
+    }
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+         NSURLProtocol.registerClass(RNCachingURLProtocol)
+         setupRootVC()
+        
+     
+        return true
+    }
+    
+    func setupRootVC() -> Void {
         window = UIWindow.init(frame: UIScreen.mainScreen().bounds)
         window?.backgroundColor = UIColor.whiteColor()
-        NSURLProtocol.registerClass(RNCachingURLProtocol)
-        window?.rootViewController = UINavigationController.init(rootViewController: TTMainViewController())
+        let leftVC = TTMenuViewController()
+        let mainVC = TTMainViewController()
+        
+        menuViewController?.leftViewController.view.backgroundColor = UIColor.whiteColor()
+        let nav = UINavigationController.init(rootViewController: mainVC)
+        menuViewController = FLSideSlipViewController.init(rootViewController: nav, withLeftViewController: leftVC)
+        menuViewController?.canSlideInPush = false
+        window?.rootViewController = menuViewController
+
         window?.makeKeyAndVisible()
-        return true
     }
 
     func applicationWillResignActive(application: UIApplication) {

@@ -4,3 +4,4 @@ use_frameworks!
 
 pod 'Alamofire', '~> 3.3'
 pod 'SnapKit', '~> 0.20.0'
+pod 'RxSwift', '~> 2.4'

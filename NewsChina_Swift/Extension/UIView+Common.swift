@@ -20,6 +20,7 @@ extension UIView {
         set(newValue) {
             objc_setAssociatedObject(self, &tapReturnBlockKey, newValue as! AnyObject, .OBJC_ASSOCIATION_COPY_NONATOMIC)
         }
+    
     }
 
     func ds_tappedWithBlock(block:tapBlock) -> Void {
