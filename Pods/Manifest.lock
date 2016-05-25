@@ -1,16 +1,27 @@
 PODS:
   - Alamofire (3.3.1)
+  - Kingfisher (2.4.1)
+  - Mantle (1.5.7):
+    - Mantle/extobjc (= 1.5.7)
+  - Mantle/extobjc (1.5.7)
   - RxSwift (2.4)
   - SnapKit (0.20.0)
+  - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
   - Alamofire (~> 3.3)
+  - Kingfisher (~> 2.4.1)
+  - Mantle (~> 1.5)
   - RxSwift (~> 2.4)
   - SnapKit (~> 0.20.0)
+  - SwiftyJSON (~> 2.3.2)
 
 SPEC CHECKSUMS:
   Alamofire: 369bc67b6f5ac33ded3648d7bd21c5bfb91c2ecc
+  Kingfisher: 41aed5b6c1ed8fa98cf6d75283ce89cf7890f517
+  Mantle: 4af47cf9547a4d0ad145a48cd0be3b411a5ae2b8
   RxSwift: 67b9ef4e8b34fb394e200e754c6a09cc16559f94
   SnapKit: 5fce3c1bbbf1fbd31de9aa92f33eb9fa03f15650
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
 COCOAPODS: 0.38.2

@@ -10,7 +10,7 @@ import UIKit
 
 class TTMainViewController: TTBaseViewController,UITableViewDataSource,UITableViewDelegate  {
     private let mainCellIndetifer  = "mainCell"
-
+    private let articleList:NSMutableArray = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +32,7 @@ class TTMainViewController: TTBaseViewController,UITableViewDataSource,UITableVi
         self.view.addSubview(mTableView)
         mTableView.snp_makeConstraints { (make) in
             make.top.bottom.left.right.equalTo(self.view!)
-        }
+        }        
     }
     
     override func creatData() {
@@ -41,9 +41,15 @@ class TTMainViewController: TTBaseViewController,UITableViewDataSource,UITableVi
                                     "region":"US",
                                     "page_size":"10",
                                     "current_page":"1"]
-//        let parmars:NSDictionary = ["cityid":"CN10101010018A"]
         TTHttpRequestTools.sharedInstance.getHttpRequest("http://api.newschinamag.com/api/article/articleList.do", parmars: parmars.getSignParmars() as? [String : AnyObject] , successBock: { (obj) in
-            print(obj)
+            let dataArr:NSArray = (obj["data"]!!["article_list"] as? NSArray)!
+            for dic in dataArr {
+                let articleModel = (DictModelManager.sharedManager.objectWithDictionary(dic as! NSDictionary, cls:TTArticleModel.self) as? TTArticleModel)!
+                self.articleList.addObject(articleModel)
+               
+         }
+           self.mTableView.reloadData()
+             print(self.articleList)
             }) { (error) in
              print(error)
         }
@@ -55,7 +61,7 @@ class TTMainViewController: TTBaseViewController,UITableViewDataSource,UITableVi
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return self.articleList.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -66,7 +72,13 @@ class TTMainViewController: TTBaseViewController,UITableViewDataSource,UITableVi
     }
     
     func configureCellAndIndexPath(mainCell:TTMainCell,indexPath:NSIndexPath) -> Void {
-        
+        let model:TTArticleModel = self.articleList[indexPath.row] as! TTArticleModel
+        mainCell.titleLab.text = model.title;
+        mainCell.timeLab.text = model.relative_time
+        mainCell.angleIcon.kf_setImageWithURL(NSURL(string: model.section_file_url!)!, placeholderImage:nil)
+        mainCell.articleIV.kf_setImageWithURL(NSURL(string:model.article_file_url!)!, placeholderImage: UIImage.init(named: "bg_default_pic_small"))
+        mainCell.infoLab.text = model.summary
+        mainCell.dateLab.text = "- \(model.publish_time) -"
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {

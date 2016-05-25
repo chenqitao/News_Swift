@@ -17,7 +17,7 @@ class TTMainView: UIView {
 class TTMainCell: UITableViewCell {
   
     
-    private var isAlpha : Bool? {
+     var isAlpha : Bool? {
         get {
           return self.isAlpha
         
@@ -38,7 +38,7 @@ class TTMainCell: UITableViewCell {
     
     }
     //MARK: - 初始化子控件
-    private lazy var articleIV: UIImageView = {
+     lazy var articleIV: UIImageView = {
         let imageIV = UIImageView()
         imageIV.contentMode = UIViewContentMode.ScaleAspectFill
         return imageIV
@@ -51,32 +51,32 @@ class TTMainCell: UITableViewCell {
         return label
     }()
 
-    private lazy var titleLab: UILabel = {
+     lazy var titleLab: UILabel = {
         let titleLabel = UILabel()
         titleLabel.font = UIFont.systemFontOfSize(16)
         titleLabel.numberOfLines = 2
         return titleLabel
     }()
     
-    private lazy var infoLab: UILabel = {
+     lazy var infoLab: UILabel = {
         let infoLabel = UILabel()
         infoLabel.font = UIFont.systemFontOfSize(13)
         infoLabel.numberOfLines = 3
         return infoLabel
     }()
     
-    private lazy var angleIconBG: UIImageView = {
+     lazy var angleIconBG: UIImageView = {
         let angleBgIV = UIImageView()
         angleBgIV.image = UIImage.init(named: "shadow_main")
         return angleBgIV
     }()
     
-    private lazy var angleIcon: UIImageView = {
+     lazy var angleIcon: UIImageView = {
         let angleIV = UIImageView()
         return angleIV
     }()
     
-    private lazy var timeLab: UILabel = {
+     lazy var timeLab: UILabel = {
         let timeLabel = UILabel()
         timeLabel.font = UIFont.systemFontOfSize(12)
         timeLabel.textColor = UIColor.whiteColor()

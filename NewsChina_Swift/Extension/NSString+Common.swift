@@ -32,6 +32,19 @@ extension NSString {
             return "partner=\(DSPartner)&appkey=\(DSPartnerKey)&data=\(str)"
         }
     }
+    
+    func parseJSONStringToNSDictionary() -> NSDictionary {
+        var dic : NSDictionary = NSDictionary()
+        let JSONData = self.dataUsingEncoding(NSUTF8StringEncoding)
+        do {
+            try
+        dic = NSJSONSerialization.JSONObjectWithData(JSONData!, options: NSJSONReadingOptions.MutableContainers) as! NSDictionary
+        return dic
+        } catch {
+           print("error")
+        }
+        return dic
+    }
 }
 
 

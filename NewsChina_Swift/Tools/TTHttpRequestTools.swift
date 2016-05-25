@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import SwiftyJSON
 typealias TTRequestSuccessBlock=(obj:AnyObject)->Void
 typealias TTRequestFailedBlock = (error:NSError) -> Void
 let APIKEY = "7e3ae7a4146887a9d5c479da54498e26"
@@ -29,7 +30,13 @@ class TTHttpRequestTools: NSObject {
             switch response.result
             {
             case .Success:
-                successBock(obj: response.description)
+                do{
+                   let jsonObject : AnyObject! = try NSJSONSerialization.JSONObjectWithData(response.data!, options: NSJSONReadingOptions.MutableContainers)
+                   successBock(obj: jsonObject)
+                } catch {
+                   print("error")
+                }
+            ; break
             case .Failure(let error):
                 failedBlock(error: error) ; break
             }
@@ -42,7 +49,13 @@ class TTHttpRequestTools: NSObject {
             switch response.result
             {
             case .Success:
-                successBock(obj: response.description)
+                do{
+                    let jsonObject : AnyObject! = try NSJSONSerialization.JSONObjectWithData(response.data!, options: NSJSONReadingOptions.MutableContainers)
+                    successBock(obj: jsonObject)
+                } catch {
+                    print("error")
+                }
+                ; break
             case .Failure(let error):
                 failedBlock(error: error) ; break
             }
@@ -50,7 +63,4 @@ class TTHttpRequestTools: NSObject {
         
         
     }
-    
-    
-    
 }

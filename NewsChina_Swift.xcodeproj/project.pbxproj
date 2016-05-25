@@ -12,10 +12,14 @@
 		AF0546C51CD357E000E5AA12 /* NSString+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0546C41CD357E000E5AA12 /* NSString+Common.swift */; };
 		AF0546C71CD358E300E5AA12 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF0546C61CD358E300E5AA12 /* CoreFoundation.framework */; };
 		AF1D90D31CE85D700097124E /* TTHttpRequestTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1D90D21CE85D700097124E /* TTHttpRequestTools.swift */; };
+		AF40961A1CF5A90700FCB1AA /* String+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4096191CF5A90700FCB1AA /* String+Common.swift */; };
+		AF40961C1CF5A91A00FCB1AA /* TTBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF40961B1CF5A91A00FCB1AA /* TTBaseModel.swift */; };
+		AF40961E1CF5A92E00FCB1AA /* TTMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF40961D1CF5A92E00FCB1AA /* TTMainViewController.swift */; };
+		AF4096201CF5A96700FCB1AA /* TTArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF40961F1CF5A96700FCB1AA /* TTArticleModel.swift */; };
+		AF4096221CF5A97600FCB1AA /* SwiftDicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4096211CF5A97600FCB1AA /* SwiftDicModel.swift */; };
 		AF44F1D51CD092CD00E20EE1 /* TTUserDefaultTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF44F1D41CD092CD00E20EE1 /* TTUserDefaultTools.swift */; };
 		AF44F1D71CD099E100E20EE1 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF44F1D61CD099E100E20EE1 /* Global.swift */; };
 		AF44F1D91CD0A2A100E20EE1 /* UIImage+common.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF44F1D81CD0A2A100E20EE1 /* UIImage+common.swift */; };
-		AF44F1DB1CD0AEBA00E20EE1 /* TTMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF44F1DA1CD0AEBA00E20EE1 /* TTMainViewController.swift */; };
 		AF44F1ED1CD0C22C00E20EE1 /* NSString+Sha1.m in Sources */ = {isa = PBXBuildFile; fileRef = AF44F1E81CD0C22C00E20EE1 /* NSString+Sha1.m */; };
 		AF44F1EE1CD0C22C00E20EE1 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = AF44F1EA1CD0C22C00E20EE1 /* Reachability.m */; };
 		AF44F1EF1CD0C22C00E20EE1 /* RNCachingURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = AF44F1EC1CD0C22C00E20EE1 /* RNCachingURLProtocol.m */; };
@@ -56,10 +60,14 @@
 		AF0546C41CD357E000E5AA12 /* NSString+Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString+Common.swift"; sourceTree = "<group>"; };
 		AF0546C61CD358E300E5AA12 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		AF1D90D21CE85D700097124E /* TTHttpRequestTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTHttpRequestTools.swift; sourceTree = "<group>"; };
+		AF4096191CF5A90700FCB1AA /* String+Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Common.swift"; sourceTree = "<group>"; };
+		AF40961B1CF5A91A00FCB1AA /* TTBaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTBaseModel.swift; sourceTree = "<group>"; };
+		AF40961D1CF5A92E00FCB1AA /* TTMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TTMainViewController.swift; path = NewsChina_Swift/TTMaIn/TTMainViewController.swift; sourceTree = SOURCE_ROOT; };
+		AF40961F1CF5A96700FCB1AA /* TTArticleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTArticleModel.swift; sourceTree = "<group>"; };
+		AF4096211CF5A97600FCB1AA /* SwiftDicModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftDicModel.swift; sourceTree = "<group>"; };
 		AF44F1D41CD092CD00E20EE1 /* TTUserDefaultTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTUserDefaultTools.swift; sourceTree = "<group>"; };
 		AF44F1D61CD099E100E20EE1 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		AF44F1D81CD0A2A100E20EE1 /* UIImage+common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+common.swift"; sourceTree = "<group>"; };
-		AF44F1DA1CD0AEBA00E20EE1 /* TTMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TTMainViewController.swift; path = ../TTMainViewController.swift; sourceTree = "<group>"; };
 		AF44F1E71CD0C22C00E20EE1 /* NSString+Sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Sha1.h"; sourceTree = "<group>"; };
 		AF44F1E81CD0C22C00E20EE1 /* NSString+Sha1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Sha1.m"; sourceTree = "<group>"; };
 		AF44F1E91CD0C22C00E20EE1 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
@@ -128,6 +136,7 @@
 		AF44F1D31CD0925B00E20EE1 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				AF4096211CF5A97600FCB1AA /* SwiftDicModel.swift */,
 				AF44F1D41CD092CD00E20EE1 /* TTUserDefaultTools.swift */,
 				AF44F1D61CD099E100E20EE1 /* Global.swift */,
 				AF1D90D21CE85D700097124E /* TTHttpRequestTools.swift */,
@@ -178,6 +187,7 @@
 		AF44F1FB1CD1EEB500E20EE1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AF40961B1CF5A91A00FCB1AA /* TTBaseModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -213,7 +223,7 @@
 		AF44F2001CD1EEC500E20EE1 /* Contoller */ = {
 			isa = PBXGroup;
 			children = (
-				AF44F1DA1CD0AEBA00E20EE1 /* TTMainViewController.swift */,
+				AF40961D1CF5A92E00FCB1AA /* TTMainViewController.swift */,
 			);
 			path = Contoller;
 			sourceTree = "<group>";
@@ -221,6 +231,7 @@
 		AF44F2011CD1EEC500E20EE1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AF40961F1CF5A96700FCB1AA /* TTArticleModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -422,6 +433,7 @@
 		AFEC90C81CCE5A4F003801AD /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				AF4096191CF5A90700FCB1AA /* String+Common.swift */,
 				AFEC90C91CCE5C7B003801AD /* UIView+Common.swift */,
 				AF44F1D81CD0A2A100E20EE1 /* UIImage+common.swift */,
 				AF0546C21CD354DD00E5AA12 /* NSDictory+Common.swift */,
@@ -620,6 +632,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF4096221CF5A97600FCB1AA /* SwiftDicModel.swift in Sources */,
+				AF4096201CF5A96700FCB1AA /* TTArticleModel.swift in Sources */,
 				AF44F1F71CD1A6C300E20EE1 /* UIViewController+FLSideMenu.m in Sources */,
 				AF44F1D91CD0A2A100E20EE1 /* UIImage+common.swift in Sources */,
 				AF44F1D51CD092CD00E20EE1 /* TTUserDefaultTools.swift in Sources */,
@@ -627,12 +641,14 @@
 				AF44F1F91CD1A98C00E20EE1 /* TTMenuViewController.swift in Sources */,
 				AF44F1ED1CD0C22C00E20EE1 /* NSString+Sha1.m in Sources */,
 				AFC89BA21CCE4C8B00FE854F /* AppDelegate.swift in Sources */,
-				AF44F1DB1CD0AEBA00E20EE1 /* TTMainViewController.swift in Sources */,
 				AFEC90C71CCE561E003801AD /* TTBaseViewController.swift in Sources */,
 				AF44F1D71CD099E100E20EE1 /* Global.swift in Sources */,
+				AF40961C1CF5A91A00FCB1AA /* TTBaseModel.swift in Sources */,
 				AF0546C31CD354DD00E5AA12 /* NSDictory+Common.swift in Sources */,
+				AF40961E1CF5A92E00FCB1AA /* TTMainViewController.swift in Sources */,
 				AF1D90D31CE85D700097124E /* TTHttpRequestTools.swift in Sources */,
 				AF44F1EF1CD0C22C00E20EE1 /* RNCachingURLProtocol.m in Sources */,
+				AF40961A1CF5A90700FCB1AA /* String+Common.swift in Sources */,
 				AF0546C51CD357E000E5AA12 /* NSString+Common.swift in Sources */,
 				AF44F20D1CD1EF6400E20EE1 /* TTMainView.swift in Sources */,
 				AF44F1EE1CD0C22C00E20EE1 /* Reachability.m in Sources */,
