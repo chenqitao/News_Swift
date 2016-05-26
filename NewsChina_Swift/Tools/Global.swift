@@ -10,6 +10,7 @@ import UIKit
 import RxSwift
 import SnapKit
 import Kingfisher
+import SwiftyJSON
 
 public let ScreenWidth = UIScreen.mainScreen().bounds.size.width
 public let ScreenHeight = UIScreen.mainScreen().bounds.size.height

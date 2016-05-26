@@ -41,6 +41,7 @@ class TTMainCell: UITableViewCell {
      lazy var articleIV: UIImageView = {
         let imageIV = UIImageView()
         imageIV.contentMode = UIViewContentMode.ScaleAspectFill
+        imageIV.clipsToBounds = true
         return imageIV
     }()
     
@@ -110,7 +111,7 @@ class TTMainCell: UITableViewCell {
         articleIV.snp_makeConstraints { (make) in
             make.centerX.equalTo(self.contentView)
             make.top.equalTo(dateLab.snp_bottom).offset(10)
-            make.size.equalTo(CGSizeMake(ScreenWidth-20, 190))
+            make.size.equalTo(CGSizeMake(ScreenWidth-20, 140))
         }
         
         angleIcon.snp_makeConstraints { (make) in
@@ -132,13 +133,14 @@ class TTMainCell: UITableViewCell {
             make.centerX.equalTo(self.contentView)
             make.top.equalTo(articleIV.snp_bottom).offset(9)
             make.bottom.equalTo(infoLab.snp_top).offset(-9)
+            make.width.equalTo(ScreenWidth - 2*10)
         }
         
         infoLab.snp_makeConstraints { (make) in
             make.top.equalTo(titleLab.snp_bottom).offset(9)
             make.centerX.equalTo(self.contentView)
             make.width.equalTo(ScreenWidth - 2*10)
-            make.bottom.equalTo(self.contentView).offset(9)
+            make.bottom.equalTo(self.contentView).offset(-9)
         }
     }
     

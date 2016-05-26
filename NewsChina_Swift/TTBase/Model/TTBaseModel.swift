@@ -7,7 +7,9 @@
 //
 
 import UIKit
-
-class TTBaseModel:NSObject {
-
+import Mantle
+class TTBaseModel:MTLModel,MTLJSONSerializing {
+    static func JSONKeyPathsByPropertyKey() -> [NSObject : AnyObject]! {
+        return [:]
+    }
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TTArticleModel: NSObject {
+class TTArticleModel: TTBaseModel {
     var article_id: String?
     var article_file_url: String?
     var section_id: String?
@@ -20,6 +20,4 @@ class TTArticleModel: NSObject {
     var publish_timestamp: String?
     var article_url: String?
     var relative_time: String?
-    var isAppearDate: Bool?
-    
 }

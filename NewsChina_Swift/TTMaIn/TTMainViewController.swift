@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Mantle
+import YYModel
 
 class TTMainViewController: TTBaseViewController,UITableViewDataSource,UITableViewDelegate  {
     private let mainCellIndetifer  = "mainCell"
@@ -44,9 +46,8 @@ class TTMainViewController: TTBaseViewController,UITableViewDataSource,UITableVi
         TTHttpRequestTools.sharedInstance.getHttpRequest("http://api.newschinamag.com/api/article/articleList.do", parmars: parmars.getSignParmars() as? [String : AnyObject] , successBock: { (obj) in
             let dataArr:NSArray = (obj["data"]!!["article_list"] as? NSArray)!
             for dic in dataArr {
-                let articleModel = (DictModelManager.sharedManager.objectWithDictionary(dic as! NSDictionary, cls:TTArticleModel.self) as? TTArticleModel)!
-                self.articleList.addObject(articleModel)
-               
+                let articleModel = TTArticleModel.yy_modelWithJSON(dic)
+                self.articleList.addObject(articleModel!)
          }
            self.mTableView.reloadData()
              print(self.articleList)
@@ -78,11 +79,11 @@ class TTMainViewController: TTBaseViewController,UITableViewDataSource,UITableVi
         mainCell.angleIcon.kf_setImageWithURL(NSURL(string: model.section_file_url!)!, placeholderImage:nil)
         mainCell.articleIV.kf_setImageWithURL(NSURL(string:model.article_file_url!)!, placeholderImage: UIImage.init(named: "bg_default_pic_small"))
         mainCell.infoLab.text = model.summary
-        mainCell.dateLab.text = "- \(model.publish_time) -"
+        mainCell.dateLab.text = model.publish_time
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 200
+        return 280
     }
     
     override func didReceiveMemoryWarning() {
